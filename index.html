@@ -1,0 +1,13 @@
+<html>
+  <head> </head>
+  <body>
+    <div id="wc"></div>
+    <span>I'm on the outside</span>
+    <script src="file:///Users/jamesbradley/webcomponents/elm.js"></script>
+    <script type="text/javascript">
+      const el = document.getElementById("wc");
+      let shadow = el.attachShadow({ mode: "open" });
+      window.Elm.Elm.init({ shadow: shadow });
+    </script>
+  </body>
+</html>
