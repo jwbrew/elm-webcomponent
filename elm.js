@@ -2313,10 +2313,10 @@ type alias Process =
 	var node = args['node'];
 	//*/
     /**/
-    var node = args && args["node"] ? args["node"] : _Debug_crash(0);
+    var node = args && args["shadow"] ? args["shadow"] : _Debug_crash(0);
     //*/
 
-    node.parentNode.replaceChild(
+    node.appendChild(
       _VirtualDom_render(virtualNode, function () {}),
       node
     );
